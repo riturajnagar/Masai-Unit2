@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MASAI NAVBAR</title>
+    <style>
+        #container {
+            height: 50px;
+            display: flex;
+            justify-content: space-evenly
+        }
+
+        #container>div {
+            height: 100%;
+            font-weight: bold;
+            align-content: center;
+            justify-content: center;
+            text-transform: uppercase;
+
+        }
+        #container>div:last-child{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        #container>div>div{
+            padding: 0px 20px;
+        }
+        #container>div>div:nth-child(7){
+            background-color: #f2fdff;
+            display: flex;
+            height: 100%;
+        }
+        p+img{
+            margin: 12px 10px;
+            margin-right: 0px;
+        }
+        button{
+            padding: 10px 20px;
+            color: red;
+            /* font-weight: bold; */
+            border-radius: 6px;
+            font-size: 16px;
+            text-transform: uppercase;
+            border: 1px solid red;
+            background-color: transparent;
+        }
+        #container>div:first-child{
+            padding-top: 5px;
+            height: auto;
+        }
+        
+
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div>
+            <img src="https://www.masaischool.com/img/navbar/logo.svg" alt="masai">
+        </div>
+        <div>
+            <div>
+                <select name="courses" id="courses">
+                    <option value="">Courses</option>
+                </select>
+            </div>
+            <div>
+                <p> fees & isa</p>
+            </div>
+            <div>
+                <p> about us</p>
+            </div>
+            <div>
+                <p> hire from us</p>
+            </div>
+            <div>
+                <p>faq</p>
+            </div>
+            <div>
+                <p>events</p>
+            </div>
+            <div>
+                <p>refer & earn</p>
+                <img src="https://www.masaischool.com/img/referral/hand.png" alt="hands">
+            </div>
+            <div><button>Login</button></div>
+        </div>
+
+    </div>
+</body>
+
+</html>
