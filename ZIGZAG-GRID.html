@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZIGZAG GRID</title>
+    <style>
+        #box1 {
+            border: 1px solid red;
+            width: 40%;
+            height: 400px;
+            margin: auto;
+            display: grid;
+            grid-template-areas:
+                "ch1 ch2 ch2 ch3"
+                "ch4 ch4 ch5 ch6"
+                "ch7 ch8 ch9 ch9"
+            ;
+            gap: 40px;
+        }
+
+        #box1>div:nth-child(1) {
+            border: 1px solid blue;
+            background-color:#217867;
+            border-radius: 5px;
+            grid-area: ch1;
+        }
+
+        #box1>div:nth-child(2) {
+            border: 1px solid blue;
+            grid-area: ch2;
+            border-radius: 5px;
+            background-color:#217867;
+        }
+
+        #box1>div:nth-child(3) {
+            border: 1px solid blue;
+            grid-area: ch3;
+            border-radius: 5px;
+            background-color:#217867;
+        }
+        #box1>div:nth-child(4) {
+            border: 1px solid blue;
+            background-color:#217867;
+            grid-area: ch4;
+            padding: 30px;
+            border-radius: 5px;
+        }
+
+        #box1>div:nth-child(5) {
+            border: 1px solid blue;
+            grid-area: ch5;
+            border-radius: 5px;
+            background-color:#217867;
+        }
+
+        #box1>div:nth-child(6) {
+            border: 1px solid blue;
+            grid-area: ch6;
+            border-radius: 5px;
+            background-color:#217867;
+        }
+        #box1>div:nth-child(7) {
+            border: 1px solid blue;
+            background-color:#217867;
+            grid-area: ch7;
+            border-radius: 5px;
+        }
+
+        #box1>div:nth-child(8) {
+            border: 1px solid blue;
+            grid-area: ch8;
+            border-radius: 5px;
+            background-color:#217867;
+        }
+
+        #box1>div:nth-child(9) {
+            border: 1px solid blue;
+            grid-area: ch9;
+            border-radius: 5px;
+            background-color:#217867;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box1">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+
+</html>

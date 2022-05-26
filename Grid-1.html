@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            width: 30%;
+            display: grid;
+            margin: auto;
+            display: grid;
+            grid-template-areas:
+            "ch1 ch1 ch2"
+            "ch3 ch4 ch4"
+            " ch5 ch5 ch5"
+            ;
+            gap: 10px;
+            
+        }
+        #box>div{
+            display: flex;
+            justify-content: flex-start;
+            padding: 20px;
+        }
+        #box>div:nth-child(1){
+          background-color: 
+#444444;
+font-size: 50px;
+border-radius: 10px;;color: white;
+grid-area: ch1;
+        }
+        #box>div:nth-child(2){
+          background-color: 
+#444444;border-radius: 10px;color: white;
+font-size: 50px;grid-area: ch2;
+        }
+        #box>div:nth-child(3){
+          background-color: 
+#444444;border-radius: 10px;
+font-size: 50px;color: white;
+grid-area: ch3;
+        }
+        #box>div:nth-child(4){
+          background-color: 
+#444444;border-radius: 10px;
+font-size: 50px;grid-area: ch4;color: white;
+        }
+        #box>div:nth-child(5){
+          background-color: 
+#444444;border-radius: 10px;
+font-size: 50px;grid-area: ch5;color: white;
+        }
+        
+    </style> 
+</head>
+<body>
+    <div id="box">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>D</div>
+        <div>E</div>
+    </div>
+</body>
+</html>
