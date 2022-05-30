@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MQ LAYOUT-3
+    </title>
+    <style>
+        h1 {
+            background-color: yellow;
+            padding: 10px;
+        }
+
+        #container {
+            display: grid;
+            grid-template-areas:
+                "ch1 ch1 ch1 ch2"
+                "ch1 ch1 ch1 ch2"
+                "ch1 ch1 ch1 ch2"
+                "ch1 ch1 ch1 ch2"
+                "ch1 ch1 ch1 ch2"
+                "ch1 ch1 ch1 ch2"
+                "ch1 ch1 ch1 ch2"
+                "ch1 ch1 ch1 ch2"
+                "ch1 ch1 ch1 ch2"
+                "ch1 ch1 ch1 ch3"
+                "ch1 ch1 ch1 ch3"
+                "ch1 ch1 ch1 ch3"
+                "ch1 ch1 ch1 ch3"
+                "ch1 ch1 ch1 ch3"
+                "ch1 ch1 ch1 ch3"
+                "ch1 ch1 ch1 ch3"
+                "ch1 ch1 ch1 ch3"
+                "ch1 ch1 ch1 ch3"
+                "ch1 ch1 ch1 ch4"
+                "ch1 ch1 ch1 ch4"
+                "ch1 ch1 ch1 ch4"
+                "ch1 ch1 ch1 ch4"
+                "ch1 ch1 ch1 ch4"
+                "ch1 ch1 ch1 ch4"
+                "ch1 ch1 ch1 ch4"
+                "ch1 ch1 ch1 ch4"
+                "ch1 ch1 ch1 ch4"
+            ;
+            gap: 20px;
+
+        }
+
+        #container>div:nth-child(1) {
+            background-color: red;
+            grid-area: ch1;
+        }
+
+        #container>div:nth-child(2) {
+            background-color: lime;
+            grid-area: ch2;
+        }
+
+        #container>div:nth-child(3) {
+            background-color: lime;
+            grid-area: ch3;
+        }
+
+        #container>div:nth-child(4) {
+            background-color: lime;
+            grid-area: ch4;
+        }
+
+        #container>div {
+            padding: 10px;
+        }
+
+        @media all and (min-width:480px) and (max-width:720px) {
+            #container {
+                grid-template-areas:
+                    "ch1 ch1 ch1 ch1 ch1 ch1 ch1 ch1 ch1"
+                    "ch1 ch1 ch1 ch1 ch1 ch1 ch1 ch1 ch1"
+                    "ch1 ch1 ch1 ch1 ch1 ch1 ch1 ch1 ch1"
+                    "ch1 ch1 ch1 ch1 ch1 ch1 ch1 ch1 ch1"
+                    "ch1 ch1 ch1 ch1 ch1 ch1 ch1 ch1 ch1"
+                    "ch1 ch1 ch1 ch1 ch1 ch1 ch1 ch1 ch1"
+                    "ch1 ch1 ch1 ch1 ch1 ch1 ch1 ch1 ch1"
+                    "ch1 ch1 ch1 ch1 ch1 ch1 ch1 ch1 ch1"
+                    "ch1 ch1 ch1 ch1 ch1 ch1 ch1 ch1 ch1"
+                    "ch1 ch1 ch1 ch1 ch1 ch1 ch1 ch1 ch1"
+                    "ch2 ch2 ch2 ch3 ch3 ch3 ch4 ch4 ch4"
+                    "ch2 ch2 ch2 ch3 ch3 ch3 ch4 ch4 ch4"
+                    "ch2 ch2 ch2 ch3 ch3 ch3 ch4 ch4 ch4"
+                    "ch2 ch2 ch2 ch3 ch3 ch3 ch4 ch4 ch4"
+                    "ch2 ch2 ch2 ch3 ch3 ch3 ch4 ch4 ch4"
+                    "ch2 ch2 ch2 ch3 ch3 ch3 ch4 ch4 ch4"
+                ;
+            }
+        }
+
+        @media all and (min-width:240px) and (max-width:479px) {
+            #container {
+                grid-template-areas:
+                    "ch1 ch1 ch1 ch1 ch1 ch1 ch1 ch1 ch1"
+                    "ch1 ch1 ch1 ch1 ch1 ch1 ch1 ch1 ch1"
+                    "ch1 ch1 ch1 ch1 ch1 ch1 ch1 ch1 ch1"
+                    "ch1 ch1 ch1 ch1 ch1 ch1 ch1 ch1 ch1"
+                    "ch1 ch1 ch1 ch1 ch1 ch1 ch1 ch1 ch1"
+                    "ch1 ch1 ch1 ch1 ch1 ch1 ch1 ch1 ch1"
+                    "ch1 ch1 ch1 ch1 ch1 ch1 ch1 ch1 ch1"
+                    "ch1 ch1 ch1 ch1 ch1 ch1 ch1 ch1 ch1"
+                    "ch1 ch1 ch1 ch1 ch1 ch1 ch1 ch1 ch1"
+                    "ch1 ch1 ch1 ch1 ch1 ch1 ch1 ch1 ch1"
+                    "ch2 ch2 ch2 ch2 ch2 ch2 ch2 ch2 ch2"
+                    "ch2 ch2 ch2 ch2 ch2 ch2 ch2 ch2 ch2"
+                    "ch2 ch2 ch2 ch2 ch2 ch2 ch2 ch2 ch2"
+                    "ch2 ch2 ch2 ch2 ch2 ch2 ch2 ch2 ch2"
+                    "ch2 ch2 ch2 ch2 ch2 ch2 ch2 ch2 ch2"
+                    "ch3 ch3 ch3 ch3 ch3 ch3 ch3 ch3 ch3"
+                    "ch3 ch3 ch3 ch3 ch3 ch3 ch3 ch3 ch3"
+                    "ch3 ch3 ch3 ch3 ch3 ch3 ch3 ch3 ch3"
+                    "ch3 ch3 ch3 ch3 ch3 ch3 ch3 ch3 ch3"
+                    "ch3 ch3 ch3 ch3 ch3 ch3 ch3 ch3 ch3"
+                    "ch4 ch4 ch4 ch4 ch4 ch4 ch4 ch4 ch4"
+                    "ch4 ch4 ch4 ch4 ch4 ch4 ch4 ch4 ch4"
+                    "ch4 ch4 ch4 ch4 ch4 ch4 ch4 ch4 ch4"
+                    "ch4 ch4 ch4 ch4 ch4 ch4 ch4 ch4 ch4"
+                    "ch4 ch4 ch4 ch4 ch4 ch4 ch4 ch4 ch4"
+                ;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Navigation</h1>
+    <div id="container">
+        <div>LEFT BOX</div>
+        <div>RIGHT BOX 1</div>
+        <div>RIGHT BOX 2</div>
+        <div>RIGHT BOX 3</div>
+    </div>
+</body>
+
+</html>

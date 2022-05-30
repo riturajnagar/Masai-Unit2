@@ -1,2 +1,3 @@
-News Layout  ->   https://cosmic-horse-48e33f.netlify.app/
-Hotel Layout ->	  https://funny-fudge-de6de3.netlify.app/
+News Layout         ->   https://cosmic-horse-48e33f.netlify.app/
+Hotel Layout        ->	 https://funny-fudge-de6de3.netlify.app/
+Responsive Web Page ->   https://neon-bublanina-566df0.netlify.app/

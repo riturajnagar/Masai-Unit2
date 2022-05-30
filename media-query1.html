@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Media Query</title>
+    <style>
+        h1 {
+            background-color: yellow;
+
+        }
+
+        #box {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 200px;
+            gap: 20px
+        }
+
+        #box>div {
+            border: 1px solid teal;
+        }
+
+        #box>div:nth-child(1) {
+            background-color: red;
+        }
+
+        #box>div:nth-child(2) {
+            background-color: green;
+        }
+
+        #box>div:nth-child(3) {
+            background-color: blue;
+        }
+
+        #box>div:nth-child(4) {
+            background-color: grey;
+        }
+
+        @media all and (min-width:480px) and (max-width:720px) {
+            #box {
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: 300px 300px;
+
+            }
+
+            #box>div:nth-child(2) {
+                background-color: green;
+                order: 3
+            }
+
+            #box>div:nth-child(3) {
+                background-color: blue;
+                order: 2;
+            }
+
+            #box>div:nth-child(4) {
+                background-color: grey;
+                order: 4;
+            }
+        }
+
+        @media all and (min-width:240px) and (max-width:479px) {
+            #box {
+                grid-template-columns: repeat(1, 1fr);
+                grid-template-rows: repeat(4,150px);
+            }
+
+            #box>div:nth-child(2) {
+                background-color: green;
+                order: 9;
+            }
+
+            #box>div:nth-child(3) {
+                background-color: blue;
+                order: 10;
+            }
+
+            #box>div:nth-child(4) {
+                background-color: grey;
+                order: 3;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Navigation</h1>
+    <div id="box">
+        <div>Box 1</div>
+        <div>Box 2</div>
+        <div>Box 3</div>
+        <div>Box 4</div>
+    </div>
+</body>
+
+</html>
